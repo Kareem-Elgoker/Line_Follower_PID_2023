@@ -81,6 +81,8 @@ void setup()
     pinMode(Sensors[i], INPUT);
   }
 
+  lcd_display_team_name();
+
   // Initialize the base speed for motors at the begining
   set_speed_for_both_wheels(base_speed);
   delay(1500);
